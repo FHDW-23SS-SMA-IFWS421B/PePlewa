@@ -10,7 +10,7 @@ public class Main {
 
         System.out.println(Converter.convertInKmh(windDriver.currentWindspeed())+" km/h");
         System.out.println(Converter.convertInK(tempDriver.read())+" K");
-        //lol
+        
         
     }
 }
