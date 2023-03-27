@@ -1,4 +1,4 @@
-package fhdw_drivers_sensors;
+package fhdw_drivers_sensors.weatherstation;
 
 public class PrintAdapter {
   

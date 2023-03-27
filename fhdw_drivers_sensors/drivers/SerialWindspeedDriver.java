@@ -1,17 +1,19 @@
-package fhdw_drivers_sensors;
+package fhdw_drivers_sensors.drivers;
 
 import java.io.FileNotFoundException;
 import java.util.Random;
 
 /**
  * Fictional windspeed driver
+ * 
  * @author Matthias Füller
  *
  */
 public class SerialWindspeedDriver {
 
-	/** 
+	/**
 	 * Init SerialDriver with given serial device
+	 * 
 	 * @param devicename
 	 * @throws FileNotFoundException
 	 */
@@ -20,9 +22,10 @@ public class SerialWindspeedDriver {
 			throw new FileNotFoundException("Could not find serial device");
 		}
 	}
-	
+
 	/**
 	 * Return the current windspeed in m/s
+	 * 
 	 * @return current windspeed in m/s
 	 */
 	public double currentWindspeed() {
