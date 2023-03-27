@@ -8,8 +8,6 @@ import fhdw_drivers_sensors.drivers.SerialTemperatureDriver;
 import fhdw_drivers_sensors.drivers.SerialWindspeedDriver;
 import fhdw_drivers_sensors.drivers.USBTemperatureDriver;
 import fhdw_drivers_sensors.weatherstation.Conversion;
-import fhdw_drivers_sensors.weatherstation.Converter;
-import fhdw_drivers_sensors.weatherstation.PrintAdapter;
 import fhdw_drivers_sensors.weatherstation.SeonsorNotAvailableException;
 
 public class Weatherstation {
