@@ -8,8 +8,7 @@ public class Main {
         SerialWindspeedDriver windDriver = new SerialWindspeedDriver("/dev/tty1");
         SerialTemperatureDriver tempDriver = new SerialTemperatureDriver("/dev/tty0");
 
-        System.out.println(Converter.convertInKmh(windDriver.currentWindspeed())+" km/h");
-        System.out.println(Converter.convertInK(tempDriver.read())+" K");
-        
+        PrintAdapter.print(Converter.convertInKmh(windDriver.currentWindspeed())+" km/h");
+        PrintAdapter.print(Converter.convertInK(tempDriver.read())+" K");
     }
 }
