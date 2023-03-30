@@ -45,7 +45,7 @@ public class Weatherstation {
     var serialTemSensor = tempSensor.create();
     System.out.println(serialTemSensor.getValue());
 
-    SerialTemperatureSensorFactory tempSensor2 = new SerialTemperatureSensorFactory(usbTempDevice);
+    USBTemperatureSensorFactory tempSensor2 = new USBTemperatureSensorFactory(usbTempDevice);
     var usbTemSensor = tempSensor2.create();
     System.out.println(usbTemSensor.getValue());
   }
