@@ -4,15 +4,15 @@ import java.io.FileNotFoundException;
 
 import fhdw_drivers_sensors.weatherstation.ITemperatureSensor;
 
-public class OverrideSerialTemperatureDriver extends USBTemperatureDriver implements ITemperatureSensor {
+public class OverrideSerialTemperatureDriver extends SerialTemperatureDriver implements ITemperatureSensor {
 
-  public OverrideSerialTemperatureDriver(String devicename) throws FileNotFoundException {
-    super(devicename);
+  public OverrideSerialTemperatureDriver(String port) throws FileNotFoundException {
+    super(port);
   }
 
   @Override
   public String getValue() {
-    throw new UnsupportedOperationException("Unimplemented method 'getValue'");
+    return Math.round(read()) + " degree(s) Celsius";
   }
 
 }

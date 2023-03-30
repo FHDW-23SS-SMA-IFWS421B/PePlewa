@@ -6,13 +6,13 @@ import fhdw_drivers_sensors.weatherstation.ITemperatureSensor;
 
 public class OverrideUSBTemperatureDriver extends USBTemperatureDriver implements ITemperatureSensor {
 
-  public OverrideUSBTemperatureDriver(String devicename) throws FileNotFoundException {
-    super(devicename);
+  public OverrideUSBTemperatureDriver(String port) throws FileNotFoundException {
+    super(port);
   }
 
   @Override
   public String getValue() {
-    throw new UnsupportedOperationException("Unimplemented method 'getValue'");
+    return Math.round(getTemperatureValue()) + " degree(s) Celsius";
   }
 
 }
