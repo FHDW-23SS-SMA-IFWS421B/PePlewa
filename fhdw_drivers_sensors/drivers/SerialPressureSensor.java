@@ -5,13 +5,15 @@ import java.util.Random;
 
 /**
  * Fictional driver to represent a serial presure sensor
+ * 
  * @author Matthias Füller
  *
  */
 public class SerialPressureSensor {
 
-	/** 
+	/**
 	 * Init SerialDriver with given serial device
+	 * 
 	 * @param devicename
 	 * @throws FileNotFoundException
 	 */
@@ -20,9 +22,10 @@ public class SerialPressureSensor {
 			throw new FileNotFoundException("Wrong serial device given " + devicename);
 		}
 	}
-	
+
 	/**
 	 * Return the current air pressure in hPa
+	 * 
 	 * @return current air pressure in hPa
 	 */
 	public double getSensorValue() {
