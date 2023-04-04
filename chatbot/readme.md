@@ -4,7 +4,6 @@
 
 1. Project members
 2. Project information
-⋅⋅3. fdgd
 
 ### 1. Project members
 

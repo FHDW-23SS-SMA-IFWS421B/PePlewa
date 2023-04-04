@@ -1,0 +1,8 @@
+{
+  "keys":
+  {
+    "translation": "",
+    "weather": "http://api.openweathermap.org/data/2.5/forecast?id=524901&appid=d200f3cd6f06d1549a63dba04e482aab",
+    "wiki": ""
+  }
+}
